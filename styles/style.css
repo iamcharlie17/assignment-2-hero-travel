@@ -143,6 +143,9 @@ body {
   border-radius: 10px;
   font-weight: 500;
 }
+/* banner section completed */
+
+
 
 
 
@@ -156,7 +159,7 @@ body {
     text-align: center;
   }
   .nav-bar ul {
-    gap: 5px;
+    gap: 2px;
   }
   .nav-title {
     font-size: medium;
