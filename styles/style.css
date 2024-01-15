@@ -31,6 +31,9 @@ body {
 }
 
 /* nav bar section styles */
+.menu-icon{
+  display: none;
+}
 
 .nav-bar {
   display: flex;
@@ -308,6 +311,8 @@ body {
 
 /* cart section completed */
 
+
+
 /* responsive styles for small devices (max-width: 600px) */
 
 @media screen and (max-width: 600px) {
@@ -321,6 +326,13 @@ body {
   }
   .nav-bar ul {
     gap: 2px;
+    display: none;
+  }
+  .menu-icon{
+    display: inline;
+  }
+  .nav-bar{
+    display: flex;
   }
   .nav-title {
     font-size: medium;
