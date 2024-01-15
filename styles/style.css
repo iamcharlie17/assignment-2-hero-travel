@@ -227,19 +227,86 @@ body {
   background: rgba(251, 181, 99, 0.05);
   padding: 30px;
 }
-.card-row{
+.card-row {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin: 20px 50px;
 }
-.card-row-2{
+.card-row-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 50%;
 }
+/* completed card section */
+/* cart section styles */
+
+.cart-section {
+  margin: 100px 50px;
+}
+.cart{
+  margin-top: 50px;
+  position: relative;
+}
+.cart-intro {
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cart-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.cart-details {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  width: 50%;
+  padding: 100px 20px 50px 20px;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+.cart-details-left{
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  width: 50%;
+  padding: 100px 20px 50px 20px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+.cart-title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cart-price{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ff5400;
+  padding: 20px 0;
+}
+.package-btn{
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* cart section completed */
 
 /* responsive styles for small devices (max-width: 600px) */
 
@@ -302,17 +369,33 @@ body {
   .destination-section .content {
     padding: 50px 20px;
   }
-  .card-content{
+  .card-content {
     padding: 50px 20px;
   }
-  .card-row{
+  .card-row {
     flex-direction: column;
     margin: 20px 20px;
   }
-  .card-row-2{
+  .card-row-2, .cart-intro {
     width: 90%;
     margin: 0 20px;
     align-items: center;
     flex-direction: column;
+  }
+  .cart-image{
+    height: 500px;
+  }
+  .cart-section{
+    margin: 20px 20px;
+  }
+  .cart-details, .cart-details-left{
+    width: 70%;
+    padding: 20px;
+    bottom: 0;
+    right: 30px;
+    left: 30px;
+  }
+  .cart-price{
+    padding: 0;
   }
 }
