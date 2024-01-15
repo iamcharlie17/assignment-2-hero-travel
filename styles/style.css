@@ -3,12 +3,25 @@
   padding: 0;
   font-family: 'Mulish', sans-serif;
 }
+/* common styles */
+.primary-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 15px 30px;
+  border: none;
+}
 
 /* header section */
 header,
 body {
   max-width: 1620px;
   margin: 50px 50px;
+}
+body {
+  border: 5px solid red;
 }
 
 /* nav bar section styles */
@@ -64,12 +77,81 @@ body {
 } */
 /* nav section complete */
 
+/* banner section styles */
+.banner {
+  background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: 100px auto;
+  justify-content: center;
+  border-radius: 16px;
+  background-size: 100%;
+}
+.banner-content {
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+}
+.banner .banner-title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  padding-top: 100px;
+}
+.banner-description {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 30px 250px;
+}
+.banner-input {
+  border-radius: 8px;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner-input-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: center;
+}
+.search-btn {
+  filter: invert(100%);
+}
+.banner-input-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px 30px;
+  margin: 1px 100px;
+}
+.banner-input-btn input {
+  border: none;
+  font-size: 16px;
+  padding: 15px 60px 15px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+}
 
-@media  screen and (max-width:600px) {
-  header,body{
+
+
+@media screen and (max-width: 600px) {
+  header,
+  body {
     margin: 50px 20px;
   }
-  .nav-bar{
+  .nav-bar {
     flex-direction: column;
     text-align: center;
   }
@@ -79,6 +161,19 @@ body {
   .nav-title {
     font-size: medium;
   }
+  .banner-input-btn{
+    flex-direction: column;
+    margin: 1px 20px;
+  }
+  .banner{
+    background-size: cover;
+    background-position: center;
+  }
+  .banner .banner-title{
+    font-size: 20px;
+    padding: 20px 10px;
+  }
+  .banner-description{
+    padding: 10px;
+  }
 }
-
-
