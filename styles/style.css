@@ -22,7 +22,7 @@
 
 /* header section */
 header,
-body{
+body {
   max-width: 1620px;
   margin: 50px 50px;
 }
@@ -162,26 +162,26 @@ body {
   font-size: 40px;
   font-weight: 800;
 }
-.popular-tour-section .primary-description{
+.popular-tour-section .primary-description {
   padding: 10px;
 }
-.popular-tour-section ul{
+.popular-tour-section ul {
   padding-left: 50px;
 }
-.popular-tour-section button{
+.popular-tour-section button {
   margin-top: 20px;
 }
 /* completed popular section */
 
 /* Destination section styles */
-.image-container{
+.image-container {
   position: relative;
   height: auto;
   text-align: center;
   height: auto;
   margin: 20px 50px;
 }
-.image-title{
+.image-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -191,27 +191,55 @@ body {
   text-align: center;
   transform: translate(-50%, -50%);
 }
-.image-container img{
+.image-container img {
   width: 100%;
 }
-.row{
+.row {
   display: flex;
   justify-content: space-between;
   gap: none;
 }
-.destination-section{
+.destination-section {
   margin: 100px 0;
 }
 
-.destination-section .content{
+.destination-section .content {
   text-align: center;
   padding: 20px 350px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+/* completed destination section */
 
+/* card section styles */
+.card-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 350px;
+}
 
+.card {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 30px;
+}
+.card-row{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 50px;
+}
+.card-row-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
 
 /* responsive styles for small devices (max-width: 600px) */
 
@@ -245,36 +273,46 @@ body {
   .banner-description {
     padding: 10px;
   }
-  .popular-tour-section{
+  .popular-tour-section {
     flex-direction: column;
     margin: 50px 20px;
   }
-  .popular-tour-section img{
+  .popular-tour-section img {
     width: 100%;
     margin-top: 50px;
   }
-  .popular-tour-section ul{
+  .popular-tour-section ul {
     padding-left: 10px;
   }
-  .section-title{
+  .section-title {
     font-size: 25px;
   }
-  .row{
+  .row {
     flex-direction: column;
     margin: auto 0px;
     height: 100%;
   }
-  .destination-section{
+  .destination-section {
     margin: 0px;
     padding: 0px;
   }
-  .image-container{
+  .image-container {
     margin: 10px 20px;
   }
-  .destination-section .content{
+  .destination-section .content {
     padding: 50px 20px;
   }
-
-  
-
+  .card-content{
+    padding: 50px 20px;
+  }
+  .card-row{
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+  .card-row-2{
+    width: 90%;
+    margin: 0 20px;
+    align-items: center;
+    flex-direction: column;
+  }
 }
