@@ -26,7 +26,7 @@ body {
   max-width: 1620px;
   margin: 50px 50px;
 }
-footer{
+footer {
   max-width: 1620px;
 }
 
@@ -312,7 +312,7 @@ footer{
   padding: 40px;
   border: #ff5400 solid 2px;
   border-radius: 16px;
-  width: 35%;
+  width: 100%;
 }
 .newsletter-form input {
   border-radius: 8px;
@@ -323,12 +323,10 @@ footer{
   color: #131318;
   font-size: 25px;
 }
-.newsletter-image{
+.newsletter-image {
   position: relative;
 }
-.newsletter-image img {
-  width: 125%;
-}
+
 .discount {
   border-radius: 16px;
   background: #ff5400;
@@ -337,15 +335,15 @@ footer{
   width: 60%;
   transform: rotate(-20deg);
   position: absolute;
-  bottom: 90px;
-  right: -150px;
+  bottom: 100px;
+  right: 10px;
 }
 .discount h3 {
   color: #fff;
   font-size: 24px;
   font-weight: 600;
 }
-.discount h2{
+.discount h2 {
   color: #fff;
   font-size: 48px;
   font-weight: 800;
@@ -353,8 +351,7 @@ footer{
 /* completed newsletter section */
 /* footer section styles */
 
-
-.footer-section{
+.footer-section {
   margin: 100px 0;
   display: flex;
   gap: 50px;
@@ -364,7 +361,7 @@ footer{
   align-items: center;
   padding: 50px 400px;
 }
-.social-links{
+.social-links {
   display: flex;
   gap: 20px;
   padding-bottom: 20px;
@@ -372,11 +369,61 @@ footer{
   padding: 20px 100px;
   filter: invert(100%);
 }
-.footer-section p{
+.footer-section p {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
 }
+/* completed footer section */
+
+/* profile section styles */
+.profile-section {
+  margin: 100px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ff5400;
+  border-radius: 18px;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+.profile {
+  color: #fff;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transition: transform 1s;
+  transform: scale(0);
+  position: absolute;
+}
+.profile h2 {
+  font-size: 45px;
+  font-weight: 800;
+}
+.profile h3,
+.profile h4,
+.profile p {
+  font-size: 30px;
+}
+.profile-section > h1 {
+  color: #fff;
+  transform: scale(1);
+  transition: transform 1s;
+}
+
+.profile-section:hover h1 {
+  transform: scale(0);
+}
+.profile-section:hover .profile {
+  transform: scale(1);
+}
+/* completed profile section */
 
 /* responsive styles for small devices (max-width: 600px) */
 
@@ -477,40 +524,57 @@ footer{
   .cart-price {
     padding: 0;
   }
-  .newsletter-section{
+  .newsletter-section {
     margin: 20px 20px;
   }
-  .newsletter-section{
+  .newsletter-section {
     flex-direction: column;
+    margin: 20px auto;
   }
-  .newsletter-content{
-    width: 95%;
+  .newsletter-content {
     padding: 10px 0 10px 10px;
     margin: 20px 0 0 0;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .newsletter-image img{
+  .newsletter-image img {
     width: 100%;
     height: 300px;
   }
-  .discount{
+  .discount {
     bottom: 50px;
     right: 10px;
     padding: 20px;
   }
-  .discount h2{
+  .discount h2 {
     font-size: large;
   }
-  .newsletter-form input{
+  .newsletter-form input {
     padding: 10px 30px 10px 0;
   }
-  .footer-section{
+  .footer-section {
     padding: 10px;
     gap: 20px;
   }
-  .social-links{
+  .social-links {
     padding: 0 10px;
   }
+  .profile-section {
+    margin: 20px auto;
+  }
+  .profile-section:hover {
+    max-width: 100%;
+  }
+  .profile {
+    width: 100%;
+  }
+  .profile h3,
+  .profile h4,
+  .profile p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
 }
