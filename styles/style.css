@@ -26,9 +26,10 @@ body {
   max-width: 1620px;
   margin: 50px 50px;
 }
-body {
-  border: 5px solid red;
+footer{
+  max-width: 1620px;
 }
+
 
 /* nav bar section styles */
 .menu-icon {
@@ -330,7 +331,7 @@ body {
   border-radius: 8px;
   background: rgba(19, 19, 24, 0.05);
   border: none;
-  padding: 16px 300px 16px 0;
+  padding: 16px 200px 16px 0;
   margin-bottom: 20px;
   color: #131318;
   font-size: 25px;
@@ -361,6 +362,31 @@ body {
   color: #fff;
   font-size: 48px;
   font-weight: 800;
+}
+/* completed newsletter section */
+/* footer section styles */
+.footer-section{
+  margin: 100px 0px;
+  display: flex;
+  gap: 50px;
+  background: #424247;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 50px 400px;
+}
+.social-links{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #131318;
+  padding: 20px 100px;
+  filter: invert(100%);
+}
+.footer-section p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* responsive styles for small devices (max-width: 600px) */
@@ -490,5 +516,13 @@ body {
   }
   .newsletter-form input{
     padding: 10px 30px 10px 0;
+  }
+  .footer-section{
+    padding: 10px;
+    gap: 20px;
+  }
+  .social-links{
+    border-bottom: #131318 solid 2px;
+    padding: 0 10px;
   }
 }
