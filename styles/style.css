@@ -30,7 +30,6 @@ footer{
   max-width: 1620px;
 }
 
-
 /* nav bar section styles */
 .menu-icon {
   display: none;
@@ -75,19 +74,7 @@ footer{
   width: 48px;
   height: 56.008px;
 }
-/* .menu-bar {
-  display: none;
-  cursor: pointer;
-}
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #131318;
-  margin: 5px 0;
-} */
-/* nav section complete */
 
-/* banner section styles */
 .banner {
   background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
   text-align: center;
@@ -365,8 +352,11 @@ footer{
 }
 /* completed newsletter section */
 /* footer section styles */
+footer{
+  max-width: 1620px;
+}
 .footer-section{
-  margin: 100px 0px;
+  margin: 100px 0;
   display: flex;
   gap: 50px;
   background: #424247;
@@ -522,7 +512,6 @@ footer{
     gap: 20px;
   }
   .social-links{
-    border-bottom: #131318 solid 2px;
     padding: 0 10px;
   }
 }
